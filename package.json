@@ -1,0 +1,50 @@
+{
+  "name": "gpt3vscode",
+  "displayName": "ChatGPT VSCode Plugin",
+  "description": "A VSCode plugin that allows you to send text to the OpenAI GPT-3 API and receive the response",
+  "version": "1.0.0",
+  "license": "MIT",
+  "publisher": "marcompile",
+  "engines": {
+    "vscode": "^1.49.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.chatGPT",
+        "title": "ChatGPT"
+      },
+      {
+        "command": "extension.addChatGPTToContextMenu",
+        "title": "Add ChatGPT to Context Menu"
+      },
+      {
+        "command": "extension.removeChatGPTFromContextMenu",
+        "title": "Remove ChatGPT from Context Menu"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "extension.chatGPT",
+          "when": "chatGPT"
+        }
+      ]
+    }
+  },
+  "activationEvents": [
+    "onCommand:extension.chatGPT"
+  ],
+  "main": "./out/extension.js",
+  "dependencies": {
+    "@types/node": "^14.0.5"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.49.3",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  }
+}
