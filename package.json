@@ -6,7 +6,7 @@
   "license": "MIT",
   "publisher": "marcompile",
   "engines": {
-    "vscode": "^1.49.0"
+    "vscode": "^1.49.3"
   },
   "categories": [
     "Other"
@@ -38,7 +38,7 @@
   "activationEvents": [
     "onCommand:extension.chatGPT"
   ],
-  "main": "./out/extension.js",
+  "main": "./out/src/extension.js",
   "dependencies": {
     "@types/node": "^14.0.5"
   },
@@ -46,5 +46,9 @@
     "@types/vscode": "^1.49.3",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcompile/gpt3vscode"
+    }
 }

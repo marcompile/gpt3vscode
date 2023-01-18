@@ -1,0 +1,31 @@
+{
+    "name": "ChatGPT",
+    "displayName": "ChatGPT",
+    "version": "1.0.0",
+    "publisher": "marcompile",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.chatGPT"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "commands": [{
+            "command": "extension.chatGPT",
+            "title": "ChatGPT"
+        },{
+            "command": "extension.addChatGPTToContextMenu",
+            "title": "Add ChatGPT to context menu"
+        },{
+            "command": "extension.removeChatGPTFromContextMenu",
+            "title": "Remove ChatGPT from context menu"
+        }]
+    },
+    "dependencies": {
+        "vscode": "^1.0.0"
+    }
+}
